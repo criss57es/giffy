@@ -1,3 +1,25 @@
+/*
+Ejemplo de uso de variables y de column-count
+:root {
+  --results-columns: 2;
+}
+
+.ListOfGifs {
+  column-count: var(--results-columns);
+  column-gap: .5em;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --results-columns: 3;
+  }
+}
+@media (min-width: 800px) {
+  :root {
+    --results-columns: 4;
+  }
+}
+*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
